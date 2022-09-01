@@ -10,7 +10,7 @@ export default function Card(props) {
                 <img className ="card-img" src={`../images/${props.item.imageUrl}`}/>
                 <div className="card-info">
                     <div className="card-loc-container">
-                        <img className ="card-icon" src={icon}/>
+                        <img className ="card-icon" src={require(icon)}/>
                         <span className ="card-loc">{props.item.location}</span>
                         <span className ="card-map"><a className ="card-map-link">View on Star Tracker</a></span>
                     </div>
