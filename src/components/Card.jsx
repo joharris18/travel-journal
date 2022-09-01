@@ -1,15 +1,16 @@
 import React from "react"
 import data from '../data'
+import icon from "../images/Path.svg"
 
 
 export default function Card(props) {
         console.log(props.isLast)
         return (
-            <div id="card" className ={require(`card ${props.isLast ? "" : "hr"}`)}>
+            <div id="card" className ={`card ${props.isLast ? "" : "hr"}`}>
                 <img className ="card-img" src={`../images/${props.item.imageUrl}`}/>
                 <div className="card-info">
                     <div className="card-loc-container">
-                        <img className ="card-icon" src={require(`../images/${props.item.iconUrl}`)}/>
+                        <img className ="card-icon" src={icon}/>
                         <span className ="card-loc">{props.item.location}</span>
                         <span className ="card-map"><a className ="card-map-link">View on Star Tracker</a></span>
                     </div>

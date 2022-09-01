@@ -1,9 +1,10 @@
 import React from "react"
+import logo from "../images/planet-outline.svg"
 
 export default function Navbar() {
     return (
         <nav>
-            <img className="nav-icon" src={require("../images/planet-outline.svg")}/>
+            <img className="nav-icon" src={logo}/>
             <p>my travel journal.</p>
         </nav>
     )
